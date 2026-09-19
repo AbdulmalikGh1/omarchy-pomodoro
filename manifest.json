@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "local.pomodoro",
+  "name": "Pomodoro Timer",
+  "version": "1.0.0",
+  "author": "Local",
+  "description": "A compact focus and break timer for the Omarchy bar",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Pomodoro Timer",
+    "description": "25-minute focus sessions with short and long breaks",
+    "category": "Time",
+    "defaultSection": "center",
+    "allowMultiple": false,
+    "defaults": {
+      "focusMinutes": 25,
+      "shortBreakMinutes": 5,
+      "longBreakMinutes": 15
+    },
+    "schema": [
+      {
+        "key": "focusMinutes",
+        "type": "integer",
+        "label": "Focus minutes",
+        "min": 1,
+        "max": 120,
+        "step": 1,
+        "defaultValue": 25
+      },
+      {
+        "key": "shortBreakMinutes",
+        "type": "integer",
+        "label": "Short break minutes",
+        "min": 1,
+        "max": 60,
+        "step": 1,
+        "defaultValue": 5
+      },
+      {
+        "key": "longBreakMinutes",
+        "type": "integer",
+        "label": "Long break minutes",
+        "min": 1,
+        "max": 90,
+        "step": 1,
+        "defaultValue": 15
+      }
+    ]
+  }
+}
