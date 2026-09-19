@@ -116,6 +116,11 @@ Item {
     persist()
   }
 
+  function resetSessionCount() {
+    completedFocusSessions = 0
+    persist()
+  }
+
   function selectPhase(targetPhase) {
     if (["focus", "shortBreak", "longBreak"].indexOf(targetPhase) < 0) return
     phase = targetPhase

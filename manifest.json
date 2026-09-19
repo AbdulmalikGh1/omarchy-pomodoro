@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "local.pomodoro",
   "name": "Pomodoro Timer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Local",
   "description": "A compact focus and break timer for the Omarchy bar",
   "kinds": [

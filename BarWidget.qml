@@ -72,9 +72,10 @@ BarWidget {
 
       Row {
         width: parent.width
+        spacing: Style.space(8)
 
         Column {
-          width: parent.width
+          width: parent.width - resetCountButton.width - parent.spacing
           spacing: Style.space(2)
 
           Text {
@@ -93,6 +94,16 @@ BarWidget {
             font.family: root.bar.fontFamily
             font.pixelSize: Style.font.caption
           }
+        }
+
+        Button {
+          id: resetCountButton
+          width: Style.space(96)
+          text: "Reset count"
+          foreground: root.bar.foreground
+          fontSize: Style.font.caption
+          horizontalPadding: Style.space(4)
+          onClicked: if (root.pomodoro) root.pomodoro.resetSessionCount()
         }
       }
 

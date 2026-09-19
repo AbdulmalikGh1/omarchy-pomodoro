@@ -56,7 +56,7 @@ The bar displays the current phase icon and the time remaining.
 | Middle-click | Start or pause the timer |
 | Right-click | Reset the current phase |
 
-The popup lets you select **Focus**, **Short break**, or **Long break**, and provides controls to reset, start/pause, or skip the current phase.
+The popup lets you select **Focus**, **Short break**, or **Long break**, and provides controls to reset, start/pause, or skip the current phase. Use **Reset count** to set the completed focus-session count back to zero without changing the active timer or phase.
 
 Finishing a focus session automatically starts a short break. Every fourth completed focus session automatically starts a long break. Finishing a break returns to focus mode and waits for you to start the next session. Using **Next** changes phases without automatically starting the next timer.
 
