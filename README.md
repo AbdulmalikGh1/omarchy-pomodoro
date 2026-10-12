@@ -113,3 +113,5 @@ The plugin uses the Omarchy shell's QML APIs and requires no additional dependen
 ## Contributing
 
 Issues and pull requests are welcome. If you find a bug, please include your Omarchy version, the steps to reproduce it, and any relevant shell output.
+
+When the `DISCORD_WEBHOOK_URL` repository secret is configured, newly opened pull requests targeting `main` are announced in the configured Discord channel. Messages include the author, PR title and number, repository, and link. Drafts are marked as drafts; commits, reviews, merges, and closures do not trigger notifications.
