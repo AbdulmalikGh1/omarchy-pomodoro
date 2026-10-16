@@ -16,11 +16,15 @@ A compact Pomodoro timer that lives in the [Omarchy](https://omarchy.org/) bar. 
 
 ## Installation
 
-After uploading this repository to GitHub, install it with its Git URL:
+Install the plugin from its public GitHub repository:
 
 ```bash
-omarchy plugin add https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git --enable
+omarchy plugin add https://github.com/AbdulmalikGh1/omarchy-pomodoro.git --enable
 ```
+
+Omarchy validates the manifest before installing and asks you to confirm the
+clone. Plugins run as code inside the Omarchy shell, so review the source and
+install only a repository you trust.
 
 The widget is placed in the center section by default. To move it:
 
@@ -28,7 +32,7 @@ The widget is placed in the center section by default. To move it:
 omarchy bar move local.pomodoro --section right
 ```
 
-If you already cloned the repository manually, place it at:
+To install from a local clone, copy the repository into the plugin directory:
 
 ```text
 ~/.config/omarchy/plugins/local.pomodoro/
@@ -90,9 +94,17 @@ omarchy plugin update local.pomodoro
 
 ## Uninstalling
 
+Remove the installed plugin with Omarchy. It asks for confirmation and unloads
+the plugin if it is enabled:
+
 ```bash
 omarchy plugin remove local.pomodoro
 ```
+
+For a manually copied folder, Omarchy moves it to a hidden backup under the
+plugins directory. For a Git-installed copy, it removes the local clone. In
+both cases the command asks for confirmation; the upstream GitHub repository is
+unaffected.
 
 ## Development
 
