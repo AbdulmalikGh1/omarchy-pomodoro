@@ -1,4 +1,4 @@
-# Pomodoro Timer for Omarchy
+# Pomodoro Timer For Omarchy
 
 A compact Pomodoro timer that lives in the [Omarchy](https://omarchy.org/) bar. It keeps your focus timer within reach without opening another app.
 
